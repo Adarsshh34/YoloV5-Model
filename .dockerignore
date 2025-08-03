@@ -220,3 +220,21 @@ com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
 fabric.properties
+
+
+# Exclude YOLOv5 code that’s not used
+classify/
+segment/
+
+# Exclude data directories (sample or huge files)
+data/
+# Exclude models directory unless it contains only small necessary files
+models/
+
+# Exclude unnecessary large inference utils or cache
+__pycache__/
+*.pyc
+
+# Prevent copying Git repos or config
+.git*
+.github/
